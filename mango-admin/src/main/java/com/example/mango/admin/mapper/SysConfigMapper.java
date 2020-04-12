@@ -1,6 +1,9 @@
 package com.example.mango.admin.mapper;
 
 import com.example.mango.admin.model.SysConfig;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface SysConfigMapper {
     /**
@@ -18,4 +21,19 @@ public interface SysConfigMapper {
      * @mbggenerated
      */
     int insertSelective(SysConfig record);
+
+    SysConfig selectByPrimaryKey(Long id);
+
+    int deleteByPrimaryKey(Long id);
+
+    int updateByPrimaryKeySelective(SysConfig record);
+
+    int updateByPrimaryKey(SysConfig record);
+
+    List<SysConfig> findPage();
+
+    List<SysConfig> findPageByLabel(@Param(value = "label") String label);
+
+    List<SysConfig> findByLabel(@Param(value = "label") String label);
+
 }
