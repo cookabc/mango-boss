@@ -1,6 +1,9 @@
 package com.example.mango.admin.mapper;
 
 import com.example.mango.admin.model.SysLoginLog;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface SysLoginLogMapper {
     /**
@@ -50,4 +53,10 @@ public interface SysLoginLogMapper {
      * @mbggenerated
      */
     int updateByPrimaryKey(SysLoginLog record);
+
+    List<SysLoginLog> findPage();
+
+    List<SysLoginLog> findPageByUserName(@Param(value = "userName") String userName);
+
+    List<SysLoginLog> findPageByStatus(@Param(value = "status") String status);
 }
