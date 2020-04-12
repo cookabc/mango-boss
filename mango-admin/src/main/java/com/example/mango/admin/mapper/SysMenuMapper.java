@@ -1,6 +1,9 @@
 package com.example.mango.admin.mapper;
 
 import com.example.mango.admin.model.SysMenu;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface SysMenuMapper {
     /**
@@ -50,4 +53,14 @@ public interface SysMenuMapper {
      * @mbggenerated
      */
     int updateByPrimaryKey(SysMenu record);
+
+    List<SysMenu> findPage();
+
+    List<SysMenu> findPageByName(@Param(value = "name") String name);
+
+    List<SysMenu> findAll();
+
+    List<SysMenu> findByUserName(@Param(value = "userName") String userName);
+
+    List<SysMenu> findRoleMenus(@Param(value = "roleId") Long roleId);
 }
