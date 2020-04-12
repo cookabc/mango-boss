@@ -1,6 +1,9 @@
 package com.example.mango.admin.mapper;
 
 import com.example.mango.admin.model.SysRole;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface SysRoleMapper {
     /**
@@ -50,4 +53,12 @@ public interface SysRoleMapper {
      * @mbggenerated
      */
     int updateByPrimaryKey(SysRole record);
+
+    List<SysRole> findPage();
+
+    List<SysRole> findAll();
+
+    List<SysRole> findPageByName(@Param(value = "name") String name);
+
+    List<SysRole> findByName(@Param(value = "name") String name);
 }
