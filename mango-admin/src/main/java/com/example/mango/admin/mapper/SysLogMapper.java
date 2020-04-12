@@ -1,6 +1,9 @@
 package com.example.mango.admin.mapper;
 
 import com.example.mango.admin.model.SysLog;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface SysLogMapper {
     /**
@@ -50,4 +53,8 @@ public interface SysLogMapper {
      * @mbggenerated
      */
     int updateByPrimaryKey(SysLog record);
+
+    List<SysLog> findPage();
+
+    List<SysLog> findPageByUserName(@Param(value = "userName") String userName);
 }
