@@ -1,6 +1,9 @@
 package com.example.mango.admin.mapper;
 
 import com.example.mango.admin.model.SysUserRole;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface SysUserRoleMapper {
     /**
@@ -50,4 +53,8 @@ public interface SysUserRoleMapper {
      * @mbggenerated
      */
     int updateByPrimaryKey(SysUserRole record);
+
+    List<SysUserRole> findUserRoles(@Param(value = "userId") Long userId);
+
+    int deleteByUserId(@Param(value = "userId") Long userId);
 }
