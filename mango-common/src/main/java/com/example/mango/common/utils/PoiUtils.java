@@ -4,6 +4,9 @@ import org.apache.poi.ss.usermodel.Workbook;
 
 import java.io.*;
 
+/**
+ * @author xugang
+ */
 public class PoiUtils {
 
     /**
@@ -23,8 +26,8 @@ public class PoiUtils {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            IOUtils.closeQuietly(workbook);
-            IOUtils.closeQuietly(stream);
+            IoUtils.closeQuietly(workbook);
+            IoUtils.closeQuietly(stream);
         }
         return file;
     }

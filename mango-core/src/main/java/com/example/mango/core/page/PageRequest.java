@@ -5,6 +5,8 @@ import java.util.Map;
 
 /**
  * 分页请求
+ *
+ * @author xugang
  */
 public class PageRequest {
     /**

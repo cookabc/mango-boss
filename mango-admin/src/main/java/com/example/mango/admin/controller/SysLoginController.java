@@ -6,7 +6,7 @@ import com.example.mango.admin.service.SysUserService;
 import com.example.mango.admin.util.PasswordUtils;
 import com.example.mango.admin.util.SecurityUtils;
 import com.example.mango.admin.vo.LoginBean;
-import com.example.mango.common.utils.IOUtils;
+import com.example.mango.common.utils.IoUtils;
 import com.example.mango.core.http.HttpResult;
 import com.google.code.kaptcha.Constants;
 import com.google.code.kaptcha.Producer;
@@ -24,6 +24,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 
+/**
+ * @author xugang
+ */
 @RestController
 public class SysLoginController {
 
@@ -43,7 +46,7 @@ public class SysLoginController {
         request.getSession().setAttribute(Constants.KAPTCHA_SESSION_KEY, text);
         ServletOutputStream out = response.getOutputStream();
         ImageIO.write(image, "jpg", out);
-        IOUtils.closeQuietly(out);
+        IoUtils.closeQuietly(out);
     }
 
     /**

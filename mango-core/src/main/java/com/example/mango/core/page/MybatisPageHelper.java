@@ -8,10 +8,12 @@ import java.util.List;
 
 /**
  * 分页查询助手
+ *
+ * @author xugang
  */
 public class MybatisPageHelper {
 
-    public static final String findPage = "findPage";
+    public static final String FIND_PAGE = "findPage";
 
     /**
      * 分页查询，约定查询方法名 findPage
@@ -20,7 +22,7 @@ public class MybatisPageHelper {
      * @param mapper      Dao对象，Mybatis的Mapper
      */
     public static PageResult findPage(PageRequest pageRequest, Object mapper) {
-        return findPage(pageRequest, mapper, findPage);
+        return findPage(pageRequest, mapper, FIND_PAGE);
     }
 
     /**

@@ -1,5 +1,8 @@
 package com.example.mango.common.utils;
 
+/**
+ * @author xugang
+ */
 public class StringUtils {
 
     /**

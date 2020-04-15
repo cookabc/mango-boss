@@ -10,6 +10,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 
 /**
  * 身份验证提供者
+ *
+ * @author xugang
  */
 public class JwtAuthenticationProvider extends DaoAuthenticationProvider {
 

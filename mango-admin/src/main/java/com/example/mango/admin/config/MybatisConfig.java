@@ -9,6 +9,9 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 import javax.sql.DataSource;
 
+/**
+ * @author xugang
+ */
 @Configuration
 @MapperScan(basePackages = {"com.example.mango.admin.mapper"})
 public class MybatisConfig {

@@ -3,6 +3,9 @@ package com.example.mango.common.utils;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * @author xugang
+ */
 public class DateTimeUtils {
 
     public static final String DATE_FORMAT = "yyyy-MM-dd HH:mm:ss";

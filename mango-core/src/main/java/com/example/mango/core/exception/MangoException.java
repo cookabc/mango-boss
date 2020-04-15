@@ -2,6 +2,8 @@ package com.example.mango.core.exception;
 
 /**
  * 自定义异常
+ *
+ * @author xugang
  */
 public class MangoException extends RuntimeException {
     private static final long serialVersionUID = 1L;

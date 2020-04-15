@@ -9,8 +9,7 @@ import java.util.Collection;
 /**
  * 安全用户模型
  *
- * @author Louis
- * @date Jan 14, 2019
+ * @author xugang
  */
 public class JwtUserDetails implements UserDetails {
 

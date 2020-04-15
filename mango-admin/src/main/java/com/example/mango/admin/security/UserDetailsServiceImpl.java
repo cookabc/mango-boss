@@ -15,6 +15,8 @@ import java.util.stream.Collectors;
 
 /**
  * 用户登录认证信息查询
+ *
+ * @author xugang
  */
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {

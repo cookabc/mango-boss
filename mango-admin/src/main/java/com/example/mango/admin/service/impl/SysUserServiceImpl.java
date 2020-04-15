@@ -11,6 +11,7 @@ import com.example.mango.admin.service.SysMenuService;
 import com.example.mango.admin.service.SysUserService;
 import com.example.mango.common.utils.DateTimeUtils;
 import com.example.mango.common.utils.PoiUtils;
+import com.example.mango.core.exception.MangoException;
 import com.example.mango.core.page.MybatisPageHelper;
 import com.example.mango.core.page.PageRequest;
 import com.example.mango.core.page.PageResult;
@@ -25,6 +26,9 @@ import javax.annotation.Resource;
 import java.io.File;
 import java.util.*;
 
+/**
+ * @author xugang
+ */
 @Service
 public class SysUserServiceImpl implements SysUserService {
 
@@ -37,7 +41,7 @@ public class SysUserServiceImpl implements SysUserService {
     @Resource
     private SysRoleMapper sysRoleMapper;
 
-    @Transactional
+    @Transactional(rollbackFor = {MangoException.class})
     @Override
     public int save(SysUser record) {
         Long id = null;

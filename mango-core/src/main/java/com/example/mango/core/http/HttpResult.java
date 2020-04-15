@@ -2,6 +2,8 @@ package com.example.mango.core.http;
 
 /**
  * HTTP结果封装
+ *
+ * @author xugang
  */
 public class HttpResult {
 

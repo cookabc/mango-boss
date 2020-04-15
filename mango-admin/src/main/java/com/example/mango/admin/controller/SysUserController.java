@@ -14,6 +14,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.util.List;
 
+/**
+ * @author xugang
+ */
 @RestController
 @RequestMapping("user")
 public class SysUserController {

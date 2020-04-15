@@ -13,6 +13,8 @@ import java.util.*;
 
 /**
  * JWT工具类
+ *
+ * @author xugang
  */
 public class JwtTokenUtils implements Serializable {
 

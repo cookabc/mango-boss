@@ -8,6 +8,7 @@ import com.example.mango.admin.model.SysMenu;
 import com.example.mango.admin.model.SysRole;
 import com.example.mango.admin.model.SysRoleMenu;
 import com.example.mango.admin.service.SysRoleService;
+import com.example.mango.core.exception.MangoException;
 import com.example.mango.core.page.MybatisPageHelper;
 import com.example.mango.core.page.PageRequest;
 import com.example.mango.core.page.PageResult;
@@ -17,6 +18,9 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.annotation.Resource;
 import java.util.List;
 
+/**
+ * @author xugang
+ */
 @Service
 public class SysRoleServiceImpl implements SysRoleService {
 
@@ -85,7 +89,7 @@ public class SysRoleServiceImpl implements SysRoleService {
         return sysMenuMapper.findRoleMenus(roleId);
     }
 
-    @Transactional
+    @Transactional(rollbackFor = {MangoException.class})
     @Override
     public int saveRoleMenus(List<SysRoleMenu> records) {
         if (records == null || records.isEmpty()) {

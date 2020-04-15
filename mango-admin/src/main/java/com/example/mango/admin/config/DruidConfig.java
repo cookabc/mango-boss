@@ -13,6 +13,9 @@ import javax.servlet.Filter;
 import javax.servlet.Servlet;
 import javax.sql.DataSource;
 
+/**
+ * @author xugang
+ */
 @Configuration
 public class DruidConfig {
 

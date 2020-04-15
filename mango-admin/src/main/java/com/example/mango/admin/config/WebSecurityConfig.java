@@ -19,13 +19,15 @@ import javax.annotation.Resource;
 
 /**
  * Spring Security配置
+ * <p>
+ * 开启Spring Security
+ * 开启权限注解，如：@PreAuthorize注解
  *
- * @author Louis
- * @date Jan 14, 2019
+ * @author xugang
  */
 @Configuration
-@EnableWebSecurity    // 开启Spring Security
-@EnableGlobalMethodSecurity(prePostEnabled = true)    // 开启权限注解，如：@PreAuthorize注解
+@EnableWebSecurity
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Resource

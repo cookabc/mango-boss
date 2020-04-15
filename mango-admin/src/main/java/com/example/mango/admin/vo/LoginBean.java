@@ -3,8 +3,7 @@ package com.example.mango.admin.vo;
 /**
  * 登录接口封装对象
  *
- * @author Louis
- * @date Oct 29, 2018
+ * @author xugang
  */
 public class LoginBean {
 

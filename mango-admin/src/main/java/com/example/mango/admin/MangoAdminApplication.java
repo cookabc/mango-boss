@@ -3,6 +3,9 @@ package com.example.mango.admin;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author xugang
+ */
 @SpringBootApplication
 public class MangoAdminApplication {
 

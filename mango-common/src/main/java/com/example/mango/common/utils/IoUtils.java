@@ -3,7 +3,10 @@ package com.example.mango.common.utils;
 import java.io.Closeable;
 import java.io.IOException;
 
-public class IOUtils {
+/**
+ * @author xugang
+ */
+public class IoUtils {
 
     /**
      * 关闭对象，连接

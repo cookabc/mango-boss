@@ -9,6 +9,9 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 
 import javax.servlet.http.HttpServletRequest;
 
+/**
+ * @author xugang
+ */
 public class SecurityUtils {
 
     /**

@@ -5,6 +5,8 @@ import java.lang.reflect.Method;
 
 /**
  * 反射相关辅助方法
+ *
+ * @author xugang
  */
 public class ReflectionUtils {
 
@@ -23,11 +25,7 @@ public class ReflectionUtils {
         if (queryMethod != null) {
             try {
                 result = queryMethod.invoke(object, args);
-            } catch (IllegalAccessException e) {
-                e.printStackTrace();
-            } catch (IllegalArgumentException e) {
-                e.printStackTrace();
-            } catch (InvocationTargetException e) {
+            } catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException e) {
                 e.printStackTrace();
             }
         } else {
@@ -57,10 +55,6 @@ public class ReflectionUtils {
                 if (parameterTypes.length == args.length) {
                     boolean isSameMethod = true;
                     for (int i = 0; i < parameterTypes.length; i++) {
-                        Object arg = args[i];
-                        if (arg == null) {
-                            arg = "";
-                        }
                         if (!parameterTypes[i].equals(args[i].getClass())) {
                             isSameMethod = false;
                             break;

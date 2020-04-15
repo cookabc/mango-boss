@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import java.util.List;
 
+/**
+ * @author xugang
+ */
 @RestController
 @RequestMapping("role")
 public class SysRoleController {
@@ -31,8 +34,10 @@ public class SysRoleController {
             }
         }
         // 新增角色
-        if ((record.getId() == null || record.getId() == 0) && !sysRoleService.findByName(record.getName()).isEmpty()) {
-            return HttpResult.error("角色名已存在!");
+        if (record.getId() == null || record.getId() == 0) {
+            if (!sysRoleService.findByName(record.getName()).isEmpty()) {
+                return HttpResult.error("角色名已存在!");
+            }
         }
         return HttpResult.ok(sysRoleService.save(record));
     }

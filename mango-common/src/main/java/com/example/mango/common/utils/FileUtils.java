@@ -4,6 +4,9 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * @author xugang
+ */
 public class FileUtils {
 
     /**

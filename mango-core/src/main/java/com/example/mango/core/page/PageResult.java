@@ -4,6 +4,8 @@ import java.util.List;
 
 /**
  * 分页返回结果
+ *
+ * @author xugang
  */
 public class PageResult {
     /**

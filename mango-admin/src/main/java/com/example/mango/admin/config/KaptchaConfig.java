@@ -9,6 +9,8 @@ import java.util.Properties;
 
 /**
  * 验证码配置
+ *
+ * @author xugang
  */
 @Configuration
 public class KaptchaConfig {

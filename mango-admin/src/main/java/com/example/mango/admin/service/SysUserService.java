@@ -9,8 +9,17 @@ import java.io.File;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * @author xugang
+ */
 public interface SysUserService extends CrudService<SysUser> {
 
+    /**
+     * 通过名字找到用户信息
+     *
+     * @param username 用户名
+     * @return 用户信息
+     */
     SysUser findByName(String username);
 
     /**

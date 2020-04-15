@@ -1,5 +1,8 @@
 package com.example.mango.admin.constant;
 
+/**
+ * @author xugang
+ */
 public interface SysConstants {
 
     /**

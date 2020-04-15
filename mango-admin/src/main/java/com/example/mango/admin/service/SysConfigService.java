@@ -5,6 +5,9 @@ import com.example.mango.core.service.CrudService;
 
 import java.util.List;
 
+/**
+ * @author xugang
+ */
 public interface SysConfigService extends CrudService<SysConfig> {
 
     /**

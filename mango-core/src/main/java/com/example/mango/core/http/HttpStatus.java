@@ -5,6 +5,7 @@ package com.example.mango.core.http;
  * All status codes defined in RFC1945 (HTTP/1.0), RFC2616 (HTTP/1.1), and
  * RFC2518 (WebDAV) are listed.
  *
+ * @author xugang
  * @since 4.0
  */
 public class HttpStatus {

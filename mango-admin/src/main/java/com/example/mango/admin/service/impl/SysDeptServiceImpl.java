@@ -12,6 +12,9 @@ import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author xugang
+ */
 @Service
 public class SysDeptServiceImpl implements SysDeptService {
 
