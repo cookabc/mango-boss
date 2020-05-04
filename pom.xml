@@ -21,6 +21,7 @@
         <module>mango-monitor</module>
         <module>mango-producer</module>
         <module>mango-producer2</module>
+        <module>mango-consumer</module>
     </modules>
 
     <build>
