@@ -19,6 +19,8 @@
         <module>mango-admin</module>
         <module>mango-backup</module>
         <module>mango-monitor</module>
+        <module>mango-producer</module>
+        <module>mango-producer2</module>
     </modules>
 
     <build>
